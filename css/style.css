@@ -39,6 +39,13 @@ body{
 .festas{
     background-color: #ffff;
     border-radius: 20px;
+    display: flex;
+    padding: 90px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 .turismo{
     color: #ffff;
