@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #092353;
+}
+
+.cabecalho{
+    width: 100%;
+    background-color: #ffff;
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.cabecalho_navegacao{
+    display: flex;
+    gap: 40px;
+}
+.cabecalho_navegacao a{
+    text-decoration: none;
+}
+
+.inicio{
+    background-image: url(/assets/imagem-fundo.png);
+    color: #ffff;
+    padding: 90px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 50px;
+}
+.festas{
+    background-color: #ffff;
+    border-radius: 20px;
+}
+.turismo{
+    color: #ffff;
+    padding: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    gap: 50px;
+}
+.culinaria{
+    background-color: #ffff;
+    padding: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    gap: 50px;
+}
+
+.sobre_nos{
+    background-color: #204180;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+}
+.rodape{
+    background-color: #092353;
+}
