@@ -1,0 +1,393 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+/*NAVBAR*/
+body{
+  font-family: "Lato", sans-serif;
+}
+
+nav{
+  background-color: #D9EFDE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+#menuNavbar {
+    background-color: #232E26;
+}
+
+.menu {
+  padding: 16px 0;
+}
+
+.itensNav {
+  font-size: large;
+  color: #232E26;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.itensNav:hover {
+  color: #FFD050;
+  transition: .3s;
+}
+
+nav .menu li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo-title{
+  color: #232E26;
+  font-size: 18px;
+}
+
+#contact {
+  border: 1px solid #232E26;
+  border-radius: 50px;
+}
+/*FIM DO NAVBAR*/
+
+
+/*PRIMEIRAPÁGINA*/
+#firstPage{
+  background-color: #232E26; /* REVISAR ISSO AQUI */
+  /* height: 90vh;
+  width: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#presentation {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-inline-start: 8%;
+  padding-inline-end: 8%;
+  color: black;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+#imgPresentation {
+  flex-direction:row;
+  width: 430px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  
+}
+
+.nameSite{
+  color: #D9EFDE;
+}
+
+.textPresentation {
+  color: #D9EFDE;
+  margin-right: 12%;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+/*Botão*/
+#buttonEnterContact{
+    width: fit-content;
+    height: fit-content;
+}
+
+#enterContact {
+  background-color: #D9EFDE;
+  color: black;
+  padding: 12px 30px;                               /*RESOLVER*/
+  font-size: 15px;
+  border-radius: 30px;
+  border: none;
+}
+
+#enterContact:hover{
+  box-shadow: 0px 0px 4px #D9EFDE;
+  transition: .3s;
+  transform: scale(1.1);
+}
+
+
+
+/*SEGUNDA PÁGINA*/
+#news {
+  background-color:#D9EFDE;
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 8rem;
+  > img {
+      height: 290px;
+  }
+}
+
+#trending {
+  margin-left: 3rem;
+}
+
+#otherNews {
+  margin-right: 3rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.authorName{
+      font-size: 10px;
+}
+
+.articleTitle {
+      font-weight: 700;
+      font-size: 20px;
+}
+
+.articleParagraph {
+    font-weight: 400;
+    color: #6D6E76;
+}
+
+#buttonPress {
+    width: 120px;
+    border: none;
+    padding: 16px;
+    background-color: #FFD050;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 5px; 
+    margin-block-end: 3rem;
+}
+
+#buttonPress:hover {
+    background-color: #ffd050d0;
+}
+
+.buttonOtherPage {
+  text-decoration: none;
+  color: black; 
+}
+
+#textNews {
+    font-size: 26px;
+    margin-block-end: 3rem;
+}
+
+.cardNews {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFFFFF;
+    width: 400px;
+    padding: 8%;
+}
+
+.cardNewsColor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FBF6EA;
+    width: 400px;
+    padding: 8%;
+}
+
+.newsTitle {
+  color: #232E26;
+  text-decoration: none;
+}
+
+.newsTitle:hover {
+  color: #FFD050;
+}
+
+
+/*TERCEIRA PÁGINA*/
+#motivational {
+    color: #D9EFDE;
+    background-color: #232E26;
+    padding: 60px 120px;
+}
+
+#textMotivational{
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#textAuthor {
+  font-size: 48px;
+}
+
+.authorPhrase {
+    font-size: 14px;
+}
+
+
+/*Faça parte da nossa equipe - última parte*/
+#enterTeam {
+  background-color: #D9EFDE;
+  border-radius: 40px;
+  flex:6;
+  width: 100%;
+  padding: 30px 0px;
+}
+
+.title{
+    font-size: 36px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.ourTeam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+
+.personalCard{
+    background: #F4F4F4;
+    height: 280px;
+    width: 305px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align:  center;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.image {
+    margin-top: 30px;
+    width: 30%;
+    border-radius: 50%;
+}
+
+.personalName{
+    color: #232536;
+    font-size: 24px;
+}
+
+h6 {
+    color: #6D6E76;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: center;
+}
+
+.socialMedia a{
+    padding: 8px;
+    font-size: 20px;
+    color: #232E26;
+    text-decoration: none;
+}
+
+.socialMedia a:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+
+/*INFORMAÇÕES*/
+#informationTeam{
+  margin: 40px 370px 0 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.finally{
+  display: flex;
+  justify-content: center;
+}
+
+#buttonToContact{
+  background-color: #FFD050; 
+  border: none;
+  color: black; 
+  padding: 13px 30px; 
+  text-align: center; 
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px; 
+  margin-block-end: 20px;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttonToContact:hover {
+    background-color: #ffd050d0;
+}
+
+
+/*FOOTER*/
+/* Rodapé principal da pagina*/
+footer {
+    height: 150px;
+    background-color: #232E26;
+    padding: 50px 100px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #D9EFDE;
+
+    > hr {
+        color: #F2F4F8;
+    }
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+/* Rodapé principal da pagina* - FIM*/
