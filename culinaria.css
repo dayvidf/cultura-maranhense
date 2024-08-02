@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* Topo principal da pagina */
+body{
+    font-family: "Lato", sans-serif;
+    background-color: #fff;
+}
+
+nav{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.itensNav {
+    font-size: large;
+    color: #092353;
+    text-decoration: none;
+    width: fit-content;
+    display: inline-block;
+    transition: .2s;
+}
+  
+.itensNav:hover {
+    transform: scale(1.05);
+}
+
+.menu {
+    padding: 16px 0;
+    display: flex;
+    justify-content: right;
+}
+
+nav .menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-title{
+    color: #fff;
+    font-size: 18px;}
+
+#contact {
+    border: 1px solid #092353;
+    border-radius: 50px;
+}
+
+.apresentacao{
+    background-image: url(/assets/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.texto{
+    font-size: 1rem;
+    color: #fff;
+}
+.texto h1{
+    margin: 20px 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+/* Topo principal da pagina  - FIM*/
+
+#main-article {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0px 40px 0 40px;
+    color: #000;
+}
+
+.initial-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0;
+    padding: 30px;
+}
+.initial-article {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    margin: 0 150px;
+}
+.article {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    > img {
+        height: 230px;
+        width: 345px;
+        object-fit: cover;
+        /* border-radius: 8px; */
+    }
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    > .article-title {
+        font-weight: 700;
+    }
+
+    > .article-paragraph {
+        font-weight: 400;
+        color: #000;
+    }
+
+    > a button {
+        width: 120px;
+        border: none;
+        padding: 16px;
+        background-color: #092353;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    > a button:hover {
+        background-color: #204180;
+    }
+}
+
+
+/* visible articles */
+
+.scroll-element.visible {
+    transform: scale(1);
+}
+
+.article {
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin-bottom: 20px;
+}
+
+.article.visible {
+    opacity: 1;
+}
+
+footer {
+
+    margin-top: 40px;
+    height: 150px;
+    background-color: #fff;
+    padding: 50px 100px;
+}
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #092353;
+
+    > hr {
+        color: #092353;
+    }
+}
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .texto h1{
+        font-size: 1.5rem;
+    }
+    
+    .initial-article{
+        margin: 0;
+    }
+}
+  
+@media only screen and (max-width: 700px) {
+    .article > img {
+        height: 200px;
+    }
+
+    footer {
+        padding: 50px 20px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .article{
+        flex-direction: column;
+    }
+
+@media only screen and (max-width: 700px) {
+    /*MENU HAMBURGUER*/
+    nav {
+        padding: 2rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }   
+
+    #menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 50%;
+        background-color: rgba(0,0,0,0.9);
+        z-index: 1000;
+    }
+
+    .menu {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .itensNav {
+        color: white;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .itensNav:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    .hamburger {
+        display: block;
+        top: 0;
+        right: 10px;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .hamburger span {
+        display: block;
+        height: 2px;
+        background-color: #092353;
+        margin: 4px 4px;
+    }
+}
+}
