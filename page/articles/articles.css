@@ -3,6 +3,7 @@
     margin: 0%;
     box-sizing: border-box;
 }
+
 /* Topo principal da pagina */
 body{
     font-family: "Lato", sans-serif;
@@ -10,32 +11,33 @@ body{
 }
 
 nav{
-    background-color: #FFFF;
+    background-color: #ffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 15px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
-.itensNav {
-    font-size: large;
-    color: #092353;
-    text-decoration: none;
-    width: fit-content;
-    display: inline-block;
-    transition: .2s;
-}
-  
-.itensNav:hover {
-    transform: scale(1.05);
+#menuNavbar {
+    background-color: #092353;
 }
 
 .menu {
     padding: 16px 0;
+}
+
+.itensNav {
+    font-size: large;
+    color: #232E26;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.itensNav:hover {
+    color: #FFD050;
+    transition: .3s;
 }
 
 nav .menu li{
@@ -53,14 +55,17 @@ nav .menu li{
 }
 
 .logo-title{
-    color: aliceblue;
-    font-size: 18px;}
+    color: #232E26;
+    font-size: 18px;
+}
 
 #contact {
-    border: 1px solid #D9EFDE;
+    border: 1px solid #232E26;
     border-radius: 50px;
 }
-/* Topo principal da pagina  - FIM*/
+/*FIM DO NAVBAR*/
+
+
 
 #main-article {
     margin-top: 40px;
@@ -150,30 +155,31 @@ nav .menu li{
     opacity: 1;
 }
 
+/*FOOTER*/
+/* Rodapé principal da pagina*/
 footer {
-
-    margin-top: 40px;
     height: 150px;
-    background-color: #FFFF;
+    background-color: #fff;
     padding: 50px 100px;
-}
-
-.footer-info {
+  }
+  
+  .footer-info {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    color: #D9EFDE;
-
+    color: #000;
+  
     > hr {
         color: #F2F4F8;
     }
-}
-
-.footer-text {
+  }
+  
+  .footer-text {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-}
+  }
+  /* Rodapé principal da pagina* - FIM*/
 
 
 @media only screen and (max-width: 900px) {
