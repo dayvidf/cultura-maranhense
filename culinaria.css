@@ -5,84 +5,63 @@
     box-sizing: border-box;
 }
 /* Topo principal da pagina */
+/*NAVBAR*/
 body{
     font-family: "Lato", sans-serif;
-    background-color: #fff;
-}
-
-nav{
-    background-color: #fff;
+  }
+  
+  nav{
+    background-color: #092353;
+    color: #fff;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: space-between;
     padding-left: 50px;
-    padding-right: 50px;
-}
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
 
-.itensNav {
+  .menu {
+    padding: 16px 0;
+    color: #fff;
+  }
+  
+  .itensNav {
     font-size: large;
-    color: #092353;
+    color: #fff;
     text-decoration: none;
     width: fit-content;
-    display: inline-block;
-    transition: .2s;
-}
+  }
   
-.itensNav:hover {
-    transform: scale(1.05);
-}
-
-.menu {
-    padding: 16px 0;
-    display: flex;
-    justify-content: right;
-}
-
-nav .menu li{
+  .itensNav:hover {
+    color: #FFD050;
+    transition: .3s;
+  }
+  
+  nav .menu li{
     list-style: none;
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 400;
-}
-
-.logo {
+  }
+  
+  .logo {
     display: flex;
     align-items: center;
     gap: 5px;
-}
-
-.logo-title{
+  }
+  
+  .logo-title{
     color: #fff;
-    font-size: 18px;}
-
-#contact {
-    border: 1px solid #092353;
+    font-size: 18px;
+  }
+  
+  #contact {
+    border: 1px solid #fff;
     border-radius: 50px;
-}
-
-.apresentacao{
-    background-image: url(/assets/fundo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.texto{
-    font-size: 1rem;
-    color: #fff;
-}
-.texto h1{
-    margin: 20px 0;
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-
-/* Topo principal da pagina  - FIM*/
+  }
+  /*FIM DO NAVBAR*/
 
 #main-article {
     margin-top: 40px;
@@ -168,14 +147,14 @@ footer {
 
     margin-top: 40px;
     height: 150px;
-    background-color: #fff;
+    background-color: #092353;
     padding: 50px 100px;
 }
 .footer-info {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    color: #092353;
+    color: #fff;
 
     > hr {
         color: #092353;
