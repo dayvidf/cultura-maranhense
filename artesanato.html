@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanato</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .image{
+            border-radius: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            background-color: #fff;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+            width: 300px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+        .card-text {
+            color: #555;
+        }
+    </style>
+</head>
+    <body>
+        <header id="menuNavbar">
+            <nav>
+                <div class="logo">
+                    <img src="icon.svg" alt="Icon logo">
+                    <h1 class="logo-title">Maranhão</h1>
+                </div>
+                <div id="menu">
+                    <ul class="menu">
+                        <li><a  class="itensNav" href="./page/articles/articles.html">Festas</a></li>
+                        <li><a  class="itensNav" href="https://turismo.ma.gov.br" target="_blank">Turismo</a></li>
+                        <li><a  class="itensNav" href="./culinaria.html">Culinária</a></li>
+                        <li><a  class="itensNav" href="#" target="_blank">Artesanato</a></li>
+                        <li id="contact"><a  class="itensNav" href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <main id="firstPage">
+            <section id="presentation">
+                <div id="about">
+                        <h1 class="nameSite">Artesanato</h1>
+                        <p class="textPresentation">Peças artesanais retratam a rica tradição e cultura da cidade, evidenciando a herança cultural e a criatividade dos artesãos maranhenses. Entre os itens destacados estão azulejos, cerâmicas, bordados e biojoias, que são símbolos da identidade cultural de São Luís. A iniciativa visa valorizar e promover o artesanato local, fortalecendo a economia criativa e preservando as tradições culturais da região.</p>
+                </div>
+                <div>
+                    <img src="/assets/image1.jpg" alt="" class="image">
+                </div>
+            </section>
+    
+            <section id="news" class="festas">
+                <section>
+                    <div class="container">
+                        <div class="card">
+                            <img src="/assets/azulejo.jpg" alt="Imagem 1">
+                            <div class="card-content">
+                                <h3 class="card-title">Azulejaria</h3>
+                                <p class="card-text">A azulejaria maranhense é uma herança da colonização portuguesa, com belos azulejos pintados à mão que decoram as fachadas de casas e prédios históricos em São Luís. Os azulejos são conhecidos por seus padrões geométricos e florais, muitas vezes em tons de azul e branco, que conferem um charme único à arquitetura local.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/assets/Renda.jpg" alt="Imagem 2">
+                            <div class="card-content">
+                                <h3 class="card-title">Rendas de Bilro</h3>
+                                <p class="card-text">As rendas de bilro são um testemunho da habilidade e paciência das artesãs maranhenses. Introduzida pelos portugueses, essa técnica de tecelagem com fios de algodão ou linho cria padrões complexos e delicados, usados para adornar roupas, toalhas e outros itens têxteis.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/assets/ceramica.jpg" alt="Imagem 3">
+                            <div class="card-content">
+                                <h3 class="card-title">Cerâmica de Alcântara</h3>
+                                <p class="card-text">A cerâmica de Alcântara é uma tradição indígena que continua viva no Maranhão. As peças são moldadas manualmente e decoradas com motivos naturais, como plantas e animais. Esse artesanato inclui panelas, potes e estatuetas, que são tanto utilitários quanto decorativos.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/assets/buriti.jpg" alt="Imagem 4">
+                            <div class="card-content">
+                                <h3 class="card-title">Artesanato em Buriti</h3>
+                                <p class="card-text">O artesanato em buriti utiliza a palmeira buriti como matéria-prima para criar produtos trançados como bolsas, cestas, chapéus e esteiras. As técnicas empregadas garantem a sustentabilidade, preservando a planta e o meio ambiente.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/assets/artesanato.jpg" alt="Imagem 7">
+                            <div class="card-content">
+                                <h3 class="card-title">Artesanato em Fibras Naturais</h3>
+                                <p class="card-text">O artesanato em fibras naturais utiliza matérias-primas como buriti, tucum e taboa para criar produtos funcionais e decorativos. Cestos, redes e tapetes são apenas alguns dos itens utilitários feitos com essas fibras, refletindo a riqueza natural do Maranhão.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/assets/biojoias.jpg" alt="Imagem 8">
+                            <div class="card-content">
+                                <h3 class="card-title">Biojoias</h3>
+                                <p class="card-text">As biojoias maranhenses são feitas a partir de elementos naturais como sementes, conchas e fibras. Essas joias são exclusivas e sustentáveis, transformando materiais simples em acessórios elegantes e únicos, como colares, pulseiras e brincos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+    
+        <footer>
+            <div class="footer-info">
+                <hr></hr>
+                <div class="footer-text">
+                    <p class="copyright">© 2024 Nosso Maranhão. Todos os direitos reservados.</p>
+                    <img src="icon.svg" alt="Icon logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D9EFDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shrub"><path d="M12 22v-7l-2-2"/><path d="M17 8v.8A6 6 0 0 1 13.8 20v0H10v0A6.5 6.5 0 0 1 7 8h0a5 5 0 0 1 10 0Z"/><path d="m14 14-2 2"/></svg>
+                </div>
+            </div>
+        </footer>
+    
+        <script src="page/home/script.js"></script>
+        <script src="/scriptResponsividade.js"></script>
+    </body>
+</html>
