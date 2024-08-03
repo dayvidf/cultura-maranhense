@@ -8,11 +8,11 @@
 /* Topo principal da página */
 body {
     font-family: "Lato", sans-serif;
-    background: #D9EFDE;
+    background: #092353;
 }
 
 nav {
-    background-color: #232E26;
+    background-color: #ffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,14 +22,13 @@ nav {
 
 .itensNav {
     font-size: large;
-    color: aliceblue;
+    color: #092353;
     text-decoration: none;
     width: fit-content;
 }
   
 .itensNav:hover {
-    color: #FFD050;
-    transition: .3s;
+  transform: scale(1.05);
 }
 
 .direct-link{
@@ -147,7 +146,8 @@ nav .menu li {
     padding: 0 35px;
     font-size: 45px; 
     margin-top: 10px; 
-    margin-bottom: 0; 
+    margin-bottom: 0;
+    color: #ffff; 
 }
 
 .article-image {
@@ -170,12 +170,13 @@ nav .menu li {
     margin-top: 30px; 
     text-align: justify; 
     font-size: 22px; 
+    color: #ffff;
 }
 
 /* Rodapé principal da página */
 footer {
     height: 150px;
-    background-color: #232E26;
+    background-color: #ffff;
     padding: 50px 100px;
 }
 
@@ -183,7 +184,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    color: #D9EFDE;
+    color: #092353;
 }
 
 .footer-info > hr {

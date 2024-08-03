@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 *{
     padding: 0%;
     margin: 0%;
@@ -6,19 +7,16 @@
 /* Topo principal da pagina */
 body{
     font-family: "Lato", sans-serif;
-    background: #092353
+    background-color: #fff;
 }
 
 nav{
-    background-color: #FFFF;
+    background-color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 15px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
 }
 
 .itensNav {
@@ -36,6 +34,8 @@ nav{
 
 .menu {
     padding: 16px 0;
+    display: flex;
+    justify-content: right;
 }
 
 nav .menu li{
@@ -53,36 +53,57 @@ nav .menu li{
 }
 
 .logo-title{
-    color: aliceblue;
+    color: #fff;
     font-size: 18px;}
 
 #contact {
-    border: 1px solid #D9EFDE;
+    border: 1px solid #092353;
     border-radius: 50px;
 }
+
+.apresentacao{
+    background-image: url(/assets/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.texto{
+    font-size: 1rem;
+    color: #fff;
+}
+.texto h1{
+    margin: 20px 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
 /* Topo principal da pagina  - FIM*/
 
 #main-article {
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 0px 40px 0 40px;
+    color: #000;
 }
 
-.initial-text {
-    color: #FFFF;
+.initial-text{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin: 40px 0;
+    margin: 30px 0;
+    padding: 30px;
 }
-
 .initial-article {
     display: flex;
     flex-direction: column;
     gap: 65px;
     margin: 0 150px;
 }
-
 .article {
     display: flex;
     align-items: center;
@@ -94,7 +115,6 @@ nav .menu li{
         /* border-radius: 8px; */
     }
 
-    
 }
 
 .content {
@@ -102,34 +122,28 @@ nav .menu li{
     flex-direction: column;
     gap: 20px;
 
-    > .category{
-        color: #592EA9;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
-
     > .article-title {
-        color: #FFFF;
         font-weight: 700;
     }
 
     > .article-paragraph {
         font-weight: 400;
-        color: #FFFF;
+        color: #000;
     }
 
     > a button {
         width: 120px;
         border: none;
         padding: 16px;
-        background-color: #FFD050;
+        background-color: #092353;
+        color: #fff;
         font-weight: 700;
         cursor: pointer;
         border-radius: 8px;
     }
 
     > a button:hover {
-        background-color: #ffd050d0;
+        background-color: #204180;
     }
 }
 
@@ -154,21 +168,19 @@ footer {
 
     margin-top: 40px;
     height: 150px;
-    background-color: #FFFF;
+    background-color: #fff;
     padding: 50px 100px;
 }
-
 .footer-info {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    color: #D9EFDE;
+    color: #092353;
 
     > hr {
-        color: #F2F4F8;
+        color: #092353;
     }
 }
-
 .footer-text {
     display: flex;
     justify-content: space-between;
@@ -177,6 +189,10 @@ footer {
 
 
 @media only screen and (max-width: 900px) {
+    .texto h1{
+        font-size: 1.5rem;
+    }
+    
     .initial-article{
         margin: 0;
     }
